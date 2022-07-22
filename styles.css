@@ -172,10 +172,18 @@ li > a {
   height: auto;
 }
 
+/* Team */
+
 #team {
   display: flex;
   flex-direction: column;
   margin-bottom: 3%;
+  text-align: center;
+}
+
+#team h2 {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 #team article {
@@ -188,7 +196,6 @@ li > a {
 #team .images {
   width: 30%;
   flex-shrink: 1;
-  text-align: center;
 }
 
 #team img {
