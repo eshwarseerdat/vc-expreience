@@ -72,11 +72,19 @@ html {
 
 body {
   font-family: "Lexend Mega", sans-serif;
+  width: 100%;
+  max-width: 1500px;
 }
 
 h2,
 h3 {
   font-weight: 500;
+}
+
+header,
+main,
+footer {
+  margin: auto;
 }
 
 /* header */
@@ -96,6 +104,7 @@ header h1 {
 header nav ul {
   font-size: 1.3rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 2.5rem;
 }
@@ -111,7 +120,7 @@ li > a {
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -157,11 +166,12 @@ li > a {
 #portfolio .images {
   text-align: center;
   width: 30%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .images > p {
   font-size: 1.3rem;
+  margin: 1rem auto;
 }
 
 #portfolio img {
@@ -196,6 +206,7 @@ li > a {
 #team .images {
   width: 30%;
   flex-shrink: 1;
+  line-height: 1.6;
 }
 
 #team img {
@@ -204,4 +215,39 @@ li > a {
   height: auto;
   overflow: hidden;
   border-radius: 5px;
+}
+
+/* footer */
+
+footer {
+  background-color: hsl(0, 0%, 69%);
+  padding: 3%;
+  width: 100vw;
+}
+
+footer section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  /* max-width: 100%; */
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 1.8rem;
+}
+
+footer p {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+p.number {
+  margin-top: 0;
+}
+
+.copy {
+  font-size: 1rem;
+  align-self: flex-start;
+  margin: 0;
 }
